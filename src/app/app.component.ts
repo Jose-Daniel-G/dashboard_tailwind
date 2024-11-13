@@ -7,6 +7,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     // BrowserModule, CommonModule,// RouterLink,
     RouterOutlet,
-    HeaderComponent,
+    HeaderComponent, SidebarComponent,
     FooterComponent,
     
     // DashboardComponent,

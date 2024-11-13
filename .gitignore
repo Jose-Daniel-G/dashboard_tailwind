@@ -43,3 +43,4 @@ Thumbs.db
 
 # Ignorar todos los archivos en public/json
 public/json/*
+tailwind/config/*

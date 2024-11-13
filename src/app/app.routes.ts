@@ -1,10 +1,31 @@
 import { Routes } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { LoginComponent } from './auth/login/login.component';
-//BrowserRouter 
+
 export const routes: Routes = [
-    {path: '', redirectTo: '/inicio', pathMatch: 'full'},
-    {path: 'inicio', component: DashboardComponent},
-    {path: 'iniciar-sesion', component: LoginComponent},
-    {path: '**', pathMatch: 'full',redirectTo: '/inicio' },
+  {
+    path: '',
+    loadComponent: () => import('./shared/layout/layout.component').then(m => m.default),
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () => import('./pages/dashboard/dashboard.component').then(m => m.DashboardComponent),
+      },
+      {
+        path: 'profile',
+        loadComponent: () => import('./pages/profile/profile.component').then(m => m.ProfileComponent),
+      },
+      {
+        path: 'tables',
+        loadComponent: () => import('./pages/tables/tables.component').then(m => m.TablesComponent),
+      },
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      }
+    ]
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard'
+  }
 ];
