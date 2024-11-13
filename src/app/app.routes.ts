@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { LoginComponent } from './auth/login/login.component';
+//BrowserRouter 
+export const routes: Routes = [
+    {path: '', redirectTo: '/inicio', pathMatch: 'full'},
+    {path: 'inicio', component: DashboardComponent},
+    {path: 'iniciar-sesion', component: LoginComponent},
+    {path: '**', pathMatch: 'full',redirectTo: '/inicio' },
+];

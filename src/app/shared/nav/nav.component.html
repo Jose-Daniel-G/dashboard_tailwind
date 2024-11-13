@@ -1,0 +1,42 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Logotipo -->
+      <a class="navbar-brand" routerLink="#">Login</a>
+
+      <!-- Botón de menú para dispositivos móviles -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Enlaces de navegación -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="#">Servicios #</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="#">Nosotros #</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/iniciar">Contacto #</a>
+          </li>
+          <li *ngIf="!userLoginOn" class="nav-item">
+            <a class="nav-link" routerLink="/iniciar-sesion">Inicio</a>
+          </li>
+          <li *ngIf="userLoginOn" class="nav-item">
+            <a class="nav-link" routerLink="/iniciar-sesion">Cerrar sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
