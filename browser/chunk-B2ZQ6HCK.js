@@ -1,0 +1,1 @@
+import{Aa as o,Ga as s,Ha as l,U as n,za as a}from"./chunk-FFDDGXGU.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-tables"]],standalone:!0,features:[l],decls:2,vars:0,template:function(e,m){e&1&&(a(0,"p"),s(1,"tables works!"),o())}})};export{p as TablesComponent};
