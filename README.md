@@ -1,5 +1,5 @@
-`Url: `https://jose-daniel-g.github.io/dashboard_taliwind/
-[🚀 Ver demo de dashboard_taliwind](https://jose-daniel-g.github.io/dashboard_taliwind/)
+`Url: `https://jose-daniel-g.github.io/dashboard_tailwind/dashboard
+[🚀 Ver demo de dashboard_taliwind](https://jose-daniel-g.github.io/dashboard_tailwind/dashboard)
 ![dashboard_taliwind](images/dashboard_taliwind.png)
 ```
 ng build `
